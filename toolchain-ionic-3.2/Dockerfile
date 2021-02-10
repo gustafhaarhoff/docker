@@ -29,9 +29,6 @@ RUN apt-get -y install unzip &&\
 # install Gradle
 RUN apt-get -y install gradle
 
-# install Android 8 (API26) 
-RUN /usr/lib/android-sdk/cmdline-tools/latest/bin/sdkmanager --install "platform-tools" "platforms;android-26" "build-tools;26.0.0"
-
 # setup ANDROID_HOME and PATH, and change ownership of the complete android-adk to the dev user
 RUN echo "export ANDROID_HOME=/usr/lib/android-sdk" >> /home/dev/.bashrc &&\
     echo "export PATH=$PATH:/usr/lib/android-sdk/tools/bin" >> /home/dev/.bashrc &&\
