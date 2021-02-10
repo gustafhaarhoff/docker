@@ -12,7 +12,7 @@ Most images available on dockerhub under the cotech account.
 
 <b>Docker run example:</b>
 ```bash
-docker run --rm -it -p 22:22 cotech/toolchain-esp32-ftm
+$ docker run --rm -it -p 22:22 cotech/toolchain-esp32-ftm
 
 # ssh server on port 22, user: dev, password: 123
 ```
